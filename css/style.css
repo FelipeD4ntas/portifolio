@@ -273,7 +273,6 @@ figcaption li:hover span::before {
 video {
     width: 100%;
     filter: grayscale(80%);
-    z-index: 4;
 }
 
 video:hover {
