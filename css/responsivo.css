@@ -258,9 +258,6 @@
     .box-contatos h2 {
         font-size: 3rem;
     }
-    figure a {
-        background: #1E1E1E;
-    }
     video {
         height: 450px;
         object-fit: contain;

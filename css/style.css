@@ -225,6 +225,10 @@ figure {
     flex-direction: column;
 }
 
+figure a {
+    background: #1E1E1E;
+}
+
 figcaption {
     border-top: 12px solid black;
     background-image: url('../assets/img/fundo.jpg');
