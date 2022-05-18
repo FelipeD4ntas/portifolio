@@ -20,7 +20,7 @@ function rolarPagina(elemento) {
     elemento.scrollIntoView({
         behavior: 'smooth'
     });
-}
+};
 
 function eventoScroll(event) {
     const clicouNoProjetos = event.target === linkProjetos;
@@ -55,7 +55,7 @@ function aplicarEstilo() {
 
 function aplicarAnimacao() {
     animacaoTitulo.classList.add('segundaAnimacao');
-}
+};
 
 function removerEvento(scale) {
     if (scale === .5 || tamanhoDaTela500px) {
@@ -82,23 +82,24 @@ function adicionarEvento(elementos, evento, funcao) {
     });
 };
 
-function reproduzirVideoNoMobile() {
-    if (tamanhoDaTela400px) {
-        videos.forEach(video => {
-            video.setAttribute('autoplay', '');
-            console.log(video);
-        })
-    }
-}
-
 function reproduzirVideo(event) {
-    event.target.play()
+    if (tamanhoDaTela400px) {
+        event.target.play()
+    }
 };
 
 function pausarVideo() {
     videos.forEach(video => {
         video.pause()
     })
+};
+
+function reproduzirVideoNoMobile() {
+    if (tamanhoDaTela400px) {
+        videos.forEach(video => {
+            video.setAttribute('autoplay', '');
+        });
+    };
 };
 
 function aplicarEfeitoSlide() {
@@ -210,12 +211,7 @@ function manipularSlide(event) {
 
 function abrirMenuMobile() {
     menuMobile.classList.toggle('menu-aberto');
-}
-
-adicionarEvento(videos, 'mouseenter', reproduzirVideo);
-adicionarEvento(videos, 'mouseout', pausarVideo);
-adicionarEvento(icones, 'click', manipularSlide);
-reproduzirVideoNoMobile()
+};
 
 animacaoTitulo.addEventListener('animationend', aplicarAnimacao);
 menuMobile.addEventListener('click', abrirMenuMobile);
@@ -224,3 +220,8 @@ linkSobreMim.addEventListener('click', eventoScroll);
 linkContatos.addEventListener('click', eventoScroll);
 linkTopo.addEventListener('click', eventoScroll);
 boxPerfil.addEventListener('wheel', zoom);
+
+adicionarEvento(videos, 'mouseenter', reproduzirVideo);
+adicionarEvento(videos, 'mouseout', pausarVideo);
+adicionarEvento(icones, 'click', manipularSlide);
+reproduzirVideoNoMobile();
