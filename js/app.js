@@ -11,6 +11,7 @@ const icones = document.querySelectorAll('.icone');
 const videos = document.querySelectorAll('video');
 const tamanhoDaTela800px = window.matchMedia('(max-width: 800px)').matches;
 const tamanhoDaTela500px = window.matchMedia('(max-width: 500px)').matches;
+const tamanhoDaTela400px = window.matchMedia('(max-width: 400px)').matches;
 
 let scale = 1;
 let index = 1;
