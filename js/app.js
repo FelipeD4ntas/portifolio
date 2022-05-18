@@ -11,6 +11,7 @@ const icones = document.querySelectorAll('.icone');
 const videos = document.querySelectorAll('video');
 const tamanhoDaTela800px = window.matchMedia('(max-width: 800px)').matches;
 const tamanhoDaTela500px = window.matchMedia('(max-width: 500px)').matches;
+const tamanhoDaTelaMaiorQue400px = window.matchMedia('(min-width: 400px)').matches;
 const tamanhoDaTela400px = window.matchMedia('(max-width: 400px)').matches;
 
 let scale = 1;
@@ -83,15 +84,18 @@ function adicionarEvento(elementos, evento, funcao) {
 };
 
 function reproduzirVideo(event) {
-    if (tamanhoDaTela400px) {
+    if (tamanhoDaTelaMaiorQue400px) {
         event.target.play()
     }
 };
 
 function pausarVideo() {
-    videos.forEach(video => {
-        video.pause()
-    })
+    if (tamanhoDaTelaMaiorQue400px) {
+        videos.forEach(video => {
+            video.pause()
+        });
+    };
+   
 };
 
 function reproduzirVideoNoMobile() {
