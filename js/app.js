@@ -82,6 +82,15 @@ function adicionarEvento(elementos, evento, funcao) {
     });
 };
 
+function reproduzirVideoNoMobile() {
+    if (tamanhoDaTela400px) {
+        videos.forEach(video => {
+            video.setAttribute('autoplay', '');
+            console.log(video);
+        })
+    }
+}
+
 function reproduzirVideo(event) {
     event.target.play()
 };
@@ -206,6 +215,7 @@ function abrirMenuMobile() {
 adicionarEvento(videos, 'mouseenter', reproduzirVideo);
 adicionarEvento(videos, 'mouseout', pausarVideo);
 adicionarEvento(icones, 'click', manipularSlide);
+reproduzirVideoNoMobile()
 
 animacaoTitulo.addEventListener('animationend', aplicarAnimacao);
 menuMobile.addEventListener('click', abrirMenuMobile);
