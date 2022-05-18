@@ -1,0 +1,320 @@
+@media (height: 1180px) and (width: 820px) {
+    .perfil {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media (height: 1024px) and (width: 768px) {
+    .perfil {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media (height: 1368px) and (width: 912px) {
+    .perfil {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+}
+
+@media (height: 720px) and (width: 540px) {
+    .perfil {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .titulo-perfil h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .box-img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+    .titulo-perfil h1 {
+        font-size: 6rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 4rem;
+    }
+    .img-pc {
+        width: 140%;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    figcaption span {
+        font-size: 1.1rem;
+    }
+    .box-projetos h1,
+    .texto-sobre-mim h2,
+    .box-contatos h2 {
+        font-size: 3.5rem;
+    }
+    @keyframes digitando {
+        from {
+            left: 0%;
+            width: 100%;
+        }
+        to {
+            left: 95%;
+            margin: 0 -35px 0 35px;
+            width: 1px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .box-img {
+        max-width: 180px;
+        max-height: 180px;
+    }
+    .titulo-perfil h1 {
+        font-size: 5.5rem;
+    }
+    .box-projetos h1,
+    .texto-sobre-mim h2,
+    .box-contatos h2 {
+        font-size: 3.5rem;
+    }
+    .icone {
+        position: absolute;
+        top: 25%;
+        transform: translate(0%, -25%);
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 850px) {
+    .menu-top,
+    .box-sobre-mim,
+    .box-contatos  {
+        max-width: 700px;
+    }
+    .box-perfil {
+        width: 100%;
+    }
+    .titulo-perfil h1 {
+        font-size: 4.5rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 3.5rem;
+    }
+    .box-projetos h1,
+    .texto-sobre-mim h2,
+    .box-contatos h2 {
+        font-size: 3.5rem;
+    }
+    .img-pc {
+        width: 160%;
+    }
+    .icone {
+        position: absolute;
+        top: 40%;
+        transform: translate(0%, -40%);
+        max-width: 60px;
+    }
+    .texto-sobre-mim {
+        width: 100%;
+    }
+    .img-sobre-mim {
+       display: none;
+    }
+    figure {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-top,
+    .box-sobre-mim,
+    .box-contatos  {
+        max-width: 500px;
+    }
+    .menu-esquerdo a {
+        font-size: 1.6rem;
+    }
+    .menu-direito a {
+        font-size: 1.2rem;
+    }
+    .titulo-perfil h1 {
+        font-size: 4.5rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 3.5rem;
+    }
+    .box-projetos h1,
+    .texto-sobre-mim h2,
+    .box-contatos h2 {
+        font-size: 3.5rem;
+    }
+    .img-pc {
+        width: 190%;
+    }
+    .icone {
+        position: absolute;
+        top: 35%;
+        transform: translate(0%, -35%);
+        max-width: 40px;
+    }
+    .contatos {
+        flex-direction: column;
+    }
+    .whatsapp {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-top,
+    .box-sobre-mim,
+    .box-contatos  {
+        max-width: 450px;
+    }
+    .titulo-perfil h1 {
+        font-size: 3.5rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 3rem;
+    }
+    .box-projetos h1,
+    .texto-sobre-mim h2,
+    .box-contatos h2 {
+        font-size: 3rem;
+    }
+    .img-pc {
+        display: none;
+    }
+    .icone {
+        top: 25%;
+        transform: translate(0%, -25%);
+        max-width: 50px;
+    }
+    .box-projetos {
+        margin-top: 0;
+    }
+    .menu-direito {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 100%;
+        transition: 1s;
+        background-image: url('../assets/img/fundo.jpg');
+        background-position: right;
+        width: 100vw;
+    }
+    .menu-direito a {
+        padding-bottom: 20px;
+        padding-left: 25px;
+        font-size: 2rem;
+        color: #F3FAFA;
+        font-family: Anonymous;
+        font-weight: bold;
+    }
+    .menu-direito a:first-child {
+        padding-top: 50px;
+    }
+    .menu-direito a:last-child {
+        padding-bottom: 50px;
+    }
+   .menu-sanduiche {
+       display: block;
+   }
+   .menu-aberto .menu-direito {
+        right: 0%;
+   }
+}
+
+@media (max-width: 450px) {
+    .menu-top,
+    .box-sobre-mim,
+    .box-contatos  {
+        max-width: 350px;
+    }
+    .box-sobre-mim {
+        max-height: inherit;
+    }
+    .titulo-perfil h1 {
+        font-size: 3rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 2.5rem;
+    }
+    .box-projetos h1,
+    .texto-sobre-mim h2,
+    .box-contatos h2 {
+        font-size: 3rem;
+    }
+    figure a {
+        background: #1E1E1E;
+    }
+    video {
+        height: 450px;
+        object-fit: contain;
+        background: #1E1E1E;
+    }
+    .icone {
+        top: 47%;
+        transform: translate(0%, -47%);
+        max-width: 70px;
+    }
+    figcaption span::before {
+        display: none;
+    }
+}
+
+@media (max-width: 395px) {
+    .titulo-perfil h1 {
+        font-size: 2.7rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 2.3rem;
+    }
+    .icone {
+        top: 46%;
+        transform: translate(0%, -46%);
+        max-width: 60px;
+    }
+}
+
+@media (max-width: 280px) {
+    .menu-top,
+    .box-sobre-mim,
+    .box-contatos  {
+        max-width: 250px;
+    }
+    .titulo-perfil h1 {
+        font-size: 2rem;
+    }
+    .titulo-perfil h2 {
+        font-size: 2.3rem;
+    }
+    figcaption {
+        display: none;
+    }
+    .icone {
+        top: 76%;
+        transform: translate(0%, -76%);
+        max-width: 60px;
+    }
+    .texto-contatos {
+        display: none;
+    }
+    .box-contatos a {
+        display: flex;
+        justify-content: center;
+    }
+}
