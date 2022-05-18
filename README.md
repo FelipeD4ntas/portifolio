@@ -1,3 +1,2 @@
 # portifolio
- Meu portifólio
- Link: https://feliped4ntas.github.io/portifolio/
+ Meu portifólio: https://feliped4ntas.github.io/portifolio/
