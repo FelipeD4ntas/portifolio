@@ -152,6 +152,12 @@ function aplicarEfeitoSlide() {
                 case 14:
                     boxVideo.style.right = '1300%';
                     break;
+                case 15:
+                    boxVideo.style.right = '1400%';
+                    break;
+                case 16:
+                    boxVideo.style.right = '1500%';
+                    break;
             };
          } else {
             switch (index) {
@@ -176,6 +182,9 @@ function aplicarEfeitoSlide() {
                 case 7:
                     boxVideo.style.right = '600%';
                     break;
+                case 8:
+                    boxVideo.style.right = '700%';
+                    break;
             };
          }
     });
@@ -187,11 +196,11 @@ function manipularSlide(event) {
     if (btnProximo) {
         ++index
         if (tamanhoDaTela800px) {
-            if (index > 14) {
+            if (index > 16) {
                 index = 1
             };
         } else {
-            if (index > 7) {
+            if (index > 8) {
                 index = 1
             };
         }
@@ -202,11 +211,11 @@ function manipularSlide(event) {
         --index
         if (tamanhoDaTela800px) {
             if (index < 1) {
-                index = 14
+                index = 16
             };
         } else {
             if (index < 1) {
-                index = 7
+                index = 8
             };
         }
         aplicarEfeitoSlide();
