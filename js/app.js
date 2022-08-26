@@ -94,8 +94,7 @@ function pausarVideo() {
         videos.forEach(video => {
             video.pause()
         });
-    };
-   
+    };  
 };
 
 function reproduzirVideoNoMobile() {
